@@ -1,0 +1,52 @@
+/*
+Author: Makhyanov Alexey
+Author URL: http://oboshto.ru/ | https://github.com/oboshto
+*/
+
+@white: #fff;
+@gray-lighter: lighten(#000, 93.5%);
+
+*{padding:0;margin:0;outline:0;box-sizing:border-box;}
+body{
+background-color: @white;
+height: 100%;
+
+}
+
+h1{
+
+}
+
+#main-container{
+background: @gray-lighter;
+position: relative;
+height: 100%;
+}
+
+#main-header{
+background: #f00;
+position: fixed;
+top: 0;
+
+}
+
+aside{
+width: 200px;
+min-height: 100%;
+}
+
+
+
+
+@media (min-width: 1280px) { 
+  #main-container{
+  max-width: 90%;
+  }
+}
+
+@media (max-width: 1280px) { 
+  #main-container{
+  max-width: 100%;
+  padding: 10px;
+  }
+}
