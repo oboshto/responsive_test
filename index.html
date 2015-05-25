@@ -12,56 +12,71 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div id="main-container" class="container-fluid">
-	  <header id="main-header" class="container-fluid">
-	    <h1>Imba Fixed Header</h1>
-		
-		<nav>
-		  <a href="#">menu 1</a>
-		  <a href="#">menu 2</a>
-		  <a href="#">menu 3</a>
-		</nav>
-	  </header>
-	  
-	  <section>
-	    
-	  </section>
-	  
-	  
-	  <aside>
-	    <header>
-	      Imba sidebar<br>
-		  width=200px<br>
-		  scroll<br>
-		  min-height 100%
-		</header>
-		
-		<nav>
-		  <a href="#">side-menu 1</a>
-		  <a href="#">side-menu 2</a>
-		  <a href="#">side-menu 3</a>
-		  <a href="#">side-menu 4</a>
-		  
-		    <a href="#">sub-side-menu 1</a>
-		    <a href="#">sub-side-menu 2</a>
-		    <a href="#">sub-side-menu sub-side</a>
-		</nav>
-	  </aside>
-	  
-	  
-	  <footer>
-	    <small>Imba Fixed Footer</small>
-		<nav>
-		  <a href="#">foo-menu 1</a>
-		  <a href="#">foo-menu 2</a>
-		  <a href="#">foo-menu 3</a>
-		</nav>
-	  </footer>
+  <body class="fill">
+    <div id="main-container" class="fill">
+	
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">          
+          <button class="toggle-switch toggle-switch_x">
+            <span>toggle menu</span>
+          </button>
+          <a class="navbar-brand" href="#">Imba Fixed Header</a>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">menu 1</a></li>
+            <li><a href="#">menu 2</a></li>
+            <li><a href="#">menu 3</a></li>
+          </ul>
+        </div>
+      </div>
+	  </nav>
+
+    <aside class="sidebar pull-left">
+      <header>
+        Imba sidebar<br>
+        width=200px<br>
+        scroll<br>
+        min-height 100%
+      </header>
+    
+      <nav>
+        <ul>
+        <li><a href="#" title="side-menu 1">side-menu 1</a></li>
+        <li><a href="#" class="active" title="side-menu 2">side-menu 2</a></li>
+        <li><a href="#" title="side-menu 3">side-menu 3</a></li>
+        <li><a href="#" class="sub-toggle" title="side-menu 4">side-menu 4 <i>&#9654;</i></a></li>
+        </ul>
+        
+        <ul class="sub-menu opened">
+          <li><a href="#" title="sub-side-menu 1">sub-side-menu 1</a></li>
+          <li><a href="#" title="sub-side-menu 2">sub-side-menu 2</a></li>
+          <li><a href="#" title="sub-side-menu sub-side 3">sub-side-menu sub-side 3</a></li>
+        </ul>
+      </nav>
+    </aside>
+    
+    <section class="content-box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper venenatis libero at sagittis. Maecenas diam dolor, vulputate sed nisl quis, semper auctor turpis. Morbi ornare massa et pretium laoreet. In luctus lacus massa, sed placerat nulla tristique non. Nunc aliquam porta urna. Integer ultrices, felis in scelerisque tincidunt, nulla odio tempor orci, eget pretium est dui vel urna. Integer finibus gravida tellus a eleifend. Ut in rutrum ante. Nullam sagittis neque eget sem consectetur, eget lacinia felis consectetur. Cras eleifend neque purus, sit amet tincidunt nunc vehicula non. Aenean sed magna a diam tincidunt rhoncus a ac felis. Quisque vestibulum, augue eget consequat laoreet, neque nunc varius dolor, eu eleifend lacus velit at libero. Suspendisse facilisis dapibus sem, sed tempus ex auctor et. Phasellus bibendum ac ipsum nec tincidunt. Aenean rhoncus placerat orci, in blandit velit cursus eu. <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper venenatis libero at sagittis. Maecenas diam dolor, vulputate sed nisl quis, semper auctor turpis. Morbi ornare massa et pretium laoreet. In luctus lacus massa, sed placerat nulla tristique non. Nunc aliquam porta urna. Integer ultrices, felis in scelerisque tincidunt, nulla odio tempor orci, eget pretium est dui vel urna. Integer finibus gravida tellus a eleifend. Ut in rutrum ante. Nullam sagittis neque eget sem consectetur, eget lacinia felis consectetur. Cras eleifend neque purus, sit amet tincidunt nunc vehicula non. Aenean sed magna a diam tincidunt rhoncus a ac felis. Quisque vestibulum, augue eget consequat laoreet, neque nunc varius dolor, eu eleifend lacus velit at libero. Suspendisse facilisis dapibus sem, sed tempus ex auctor et. Phasellus bibendum ac ipsum nec tincidunt. Aenean rhoncus placerat orci, in blandit velit cursus eu.
+    </section>     
+    
+    <footer class="main-footer">
+      <small class="pull-left text-muted">Imba Fixed Footer</small>
+      <div class="footer-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">foo-menu 1</a></li>
+          <li><a href="#">foo-menu 2</a></li>
+          <li><a href="#">foo-menu 3</a></li>
+        </ul>
+      </div>
+    </footer>
 	</div>
 	
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/imba.js"></script>
   </body>
 </html>
